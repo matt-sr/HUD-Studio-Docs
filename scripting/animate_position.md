@@ -32,7 +32,7 @@ node on screen  = block on screen + (node position + node shift) × HUD scale ×
 | Field          | Runs                                                                                                       |
 | -------------- | ---------------------------------------------------------------------------------------------------------- |
 | Block Position | every block tick, at the _Animation_ rate (or _Data_ if _Max Update Rate_ holds it there), after the nodes |
-| Node Position  | at the node's [Update Rate](../concepts/rates.md)                                                                                |
+| Node Position  | at the node's [Update Rate](../concepts/rates.md)                                                          |
 
 Between runs the last shift holds. `anim` reads the time since the last run on its own, so motion keeps the same speed at any rate. For the smoothest node motion, run it every frame:
 

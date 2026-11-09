@@ -4,18 +4,18 @@ Each physical key and mouse button reads the same fields, whatever the player ha
 
 ## Keys
 
-| Keys                   | IDs                                                                                                                         |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Letters                | `a` .. `z`                                                                                                                  |
-| Digits                 | `digit_0` .. `digit_9`                                                                                                      |
-| Punctuation            | `comma`, `period`, `minus`                                                                                                  |
-| Function keys          | `f1` .. `f12`                                                                                                               |
-| Editing                | `space`, `tab`, `enter`, `backspace`, `esc`, `caps_lock`                                                                    |
-| Modifiers              | `left_shift`, `right_shift`, `left_ctrl`, `right_ctrl`, `left_alt`, `right_alt`                                             |
-| Arrows                 | `up`, `down`, `left`, `right`                                                                                               |
-| Navigation             | `insert`, `delete`, `home`, `end`, `page_up`, `page_down`                                                                   |
-| Numpad                 | `numpad_0` .. `numpad_9`, `numpad_plus`, `numpad_minus`, `numpad_enter`                                                     |
-| Mouse                  | `mouse_left`, `mouse_right`, `mouse_middle`, `mouse_extra_1` (Mouse 4), `mouse_extra_2` (Mouse 5)                           |
+| Keys          | IDs                                                                                               |
+| ------------- | ------------------------------------------------------------------------------------------------- |
+| Letters       | `a` .. `z`                                                                                        |
+| Digits        | `digit_0` .. `digit_9`                                                                            |
+| Punctuation   | `comma`, `period`, `minus`                                                                        |
+| Function keys | `f1` .. `f12`                                                                                     |
+| Editing       | `space`, `tab`, `enter`, `backspace`, `esc`, `caps_lock`                                          |
+| Modifiers     | `left_shift`, `right_shift`, `left_ctrl`, `right_ctrl`, `left_alt`, `right_alt`                   |
+| Arrows        | `up`, `down`, `left`, `right`                                                                     |
+| Navigation    | `insert`, `delete`, `home`, `end`, `page_up`, `page_down`                                         |
+| Numpad        | `numpad_0` .. `numpad_9`, `numpad_plus`, `numpad_minus`, `numpad_enter`                           |
+| Mouse         | `mouse_left`, `mouse_right`, `mouse_middle`, `mouse_extra_1` (Mouse 4), `mouse_extra_2` (Mouse 5) |
 
 `end` is a Lua keyword, so read it as `keys["end"]`.
 

@@ -100,6 +100,8 @@ A source id also works on its own: `player_2.status.health`. Only the sources a 
 | `count_players(path, op, a, b)`                   | how many players pass a test: `count_players("state.downed")`                            |
 | `query_player(slot, path, op, a, b)`              | one slot (0 = spectated) passes a test                                                   |
 | `unit_from_player_slot(slot)`                     | the unit in a slot, or nil                                                               |
+| `char_id_from_player_slot(slot)`                  | the character id in a slot, or nil                                                       |
+| `account_id_from_player_slot(slot)`               | the account id in a slot, or nil                                                         |
 | `simple_asset(path)`                              | an image from `mods/hud_studio/assets/` as a material value (needs the SimpleAssets mod) |
 | `simple_asset_gif(folder, ext, first, last, fps)` | a numbered image sequence as a looping material                                          |
 | `get_mod(name)`                                   | another mod's handle, for cross-mod reads                                                |

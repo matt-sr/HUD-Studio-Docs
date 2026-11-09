@@ -19,40 +19,32 @@ HUD Studio Ability name short-hand, e.g. Shroudfield -> *Stealth*
 
 Dynamic icon; vanilla appearance
 
-### Ability Icon (Gray til Charge)
-`ability.icon_gray_til_charge` · material · **string | nil**
+Options:
 
-Dynamic icon; stays gray until charge is ready
+Shapes: [Vanilla] Adapts To Class (Skitarii battery; rest are hexagon); rest are custom masks.
 
-### Ability Icon (Gray til Charge) - Hexagon
-`ability.icon_hexagon_gray_til_charge` · material · **string | nil**
+Fill Color: [Vanilla] Adapts To Class (Skitarii blue; rest are Red); rest are custom colors.
 
-Dynamic icon; forces hexagon shape; stays gray until charge is ready
+Fill Behaviours: 
+- [Vanilla] Cooldown & Active (fills up to your next charge, drains while in active state)
+- Empty Until a Charge is Ready
+- Active Duration Left 
+- Always Full or Always Empty
 
-### Ability Icon - Hexagon
-`ability.icon_hexagon` · material · **string | nil**
-
-Dynamic icon; forces hexagon shape
 
 ### Ability Icon Frame
 `ability.icon_frame` · material · **string | nil**
 
 Icon frame; vanilla appearance
 
-### Ability Icon Frame - Hexagon
-`ability.icon_frame_hexagon` · material · **string | nil**
-
-Icon frame; forces hexagon shape
+Shape: [Vanilla] Adapts To Class; Hexagon for all but Skitarii; Hexagon; Skitarii Battery
 
 ### Ability Icon Shine
-`ability.icon_frame_glow` · material · **string | nil**
+`ability.icon_glow` · material · **string | nil**
 
 Dynamic shine/glow; vanilla appearance
 
-### Ability Icon Shine - Hexagon
-`ability.icon_frame_glow_hexagon` · material · **string | nil**
-
-Dynamic shine/glow; forces hexagon shape
+Shape: [Vanilla] Adapts To Class: Hexagon for all but Skitarii; Hexagon; Skitarii Battery. Hidden while the ability is on cooldown.
 
 ## Status
 

@@ -2,13 +2,13 @@ The Blocks tree is the list in the Blocks panel. It holds every group, block and
 
 ## Rows
 
-| Row               | What it is                                             |
-| ----------------- | ------------------------------------------------------ |
-| Group             | a [Group](groups.md), with its blocks under it         |
-| Block             | a block; its caret folds its nodes away                |
-| Node              | a text, rect or progress bar inside the block above it |
-| Deleted Nodes (n) | a block's deleted nodes, folded under the block        |
-| Deleted Items     | deleted blocks, at the bottom of the tree              |
+| Row               | What it is                                                 |
+| ----------------- | ---------------------------------------------------------- |
+| Group             | a [Group](../concepts/groups.md), with its blocks under it |
+| Block             | a block; its caret folds its nodes away                    |
+| Node              | a text, rect or progress bar inside the block above it     |
+| Deleted Nodes (n) | a block's deleted nodes, folded under the block            |
+| Deleted Items     | deleted blocks, at the bottom of the tree                  |
 
 A mod's block is always folded, since its nodes cannot be edited.
 

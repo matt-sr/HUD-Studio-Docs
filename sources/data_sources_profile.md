@@ -5,20 +5,12 @@ Sources: `player_1`, `player_2`, `player_3`, `player_4`, `player_spectated`
 
 Player insignia
 
-### Portrait & Frame
+### Portrait
 `profile.portrait` · material · **string | nil**
 
 Player portrait; frame + head shot
 
-### Portrait (No Frame)
-`profile.portrait_unframed` · material · **string | nil**
-
-Partial Player portrait; head shot only
-
-### Portrait Frame
-`profile.portrait_frame` · material · **string | nil**
-
-Partial Player portrait; frame only
+Part(s): Frame + Head, Head Only or Frame Only. Tint When Dead: grey out while dead or disabled, as vanilla (never in the hub or the Meat Grinder)
 
 ## Name
 

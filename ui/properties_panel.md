@@ -9,7 +9,7 @@ The Properties panel holds the settings of whatever is selected. Select a row in
 | Group    | the group's variables and its library details          |
 | Guides   | the canvas guides, with `Generate` and the guide lists |
 
-A block marked `[MOD]` shows a short form: its placement and any variables its author exposed under `Customise`. Duplicate it to edit the rest. See [Mod Blocks](mod_blocks.md).
+A block marked `[MOD]` shows a short form: its placement and any variables its author exposed under `Customise`. Duplicate it to edit the rest. See [Mod Blocks](../concepts/mod_blocks.md).
 
 ## Tabs
 
@@ -23,7 +23,7 @@ A block or group splits its settings across tabs along the top.
 | `Events`     | the block's events                                       |
 | `Tools`      | Mass Update (with Inactive Bindings), Performance Info   |
 
-The cycler in the corner of the tab strip is the block's update rate. See [Rates](rates.md).
+The cycler in the corner of the tab strip is the block's update rate. See [Rates](../concepts/rates.md).
 
 ## Sections
 
@@ -31,7 +31,7 @@ Fields are grouped into sections, such as `Visibility` and `Style`. Click a sect
 
 ## Fields
 
-Each row is one field. The dropdown beside it picks its mode: `Static`, `Data Source`, `Code`, and so on. See [Fields](fields.md).
+Each row is one field. The dropdown beside it picks its mode: `Static`, `Data Source`, `Code`, and so on. See [Fields](../concepts/fields.md).
 
 - Hover a field's label for a tooltip.
 - Number boxes take typing, or the `-` / `+` buttons. Hold a button to keep stepping.

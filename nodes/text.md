@@ -2,20 +2,20 @@ A text node draws a string. It can be a fixed label, a value read from a data so
 
 ## Fields
 
-| Field         | What it does                                                          |
-| ------------- | --------------------------------------------------------------------- |
-| Text          | the string, in `Single` or `Chain` mode                               |
-| Size          | the box the text wraps within, in design px. Default 160 x 22         |
-| Color         | the letters. Default white                                            |
-| Backing color | a plate behind each line, like the game's subtitles. Unset draws none |
-| Font          | the typeface: a game font, or `Custom` for your own                   |
-| Font size     | 4 .. 240. Default 22                                                  |
-| Shadow        | a drop shadow behind the letters                                      |
-| Shadow color  | `Engine`, `Text color` or `Static`. See [Shadow color](#shadow-color) below          |
-| Shrink to Fit | shrink the font until the text fits the box's width                   |
-| Alignment     | the point of the box the text anchors to                              |
-| Flip          | mirror the text horizontally, vertically or both                      |
-| Rotation      | degrees clockwise, about the box's centre                             |
+| Field         | What it does                                                                |
+| ------------- | --------------------------------------------------------------------------- |
+| Text          | the string, in `Single` or `Chain` mode                                     |
+| Size          | the box the text wraps within, in design px. Default 160 x 22               |
+| Color         | the letters. Default white                                                  |
+| Backing color | a plate behind each line, like the game's subtitles. Unset draws none       |
+| Font          | the typeface: a game font, or `Custom` for your own                         |
+| Font size     | 4 .. 240. Default 22                                                        |
+| Shadow        | a drop shadow behind the letters                                            |
+| Shadow color  | `Engine`, `Text color` or `Static`. See [Shadow color](#shadow-color) below |
+| Shrink to Fit | shrink the font until the text fits the box's width                         |
+| Alignment     | the point of the box the text anchors to                                    |
+| Flip          | mirror the text horizontally, vertically or both                            |
+| Rotation      | degrees clockwise, about the box's centre                                   |
 
 An empty string draws nothing.
 

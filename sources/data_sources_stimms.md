@@ -7,11 +7,6 @@ Sources: `player_1`, `player_2`, `player_3`, `player_4`, `player_spectated`
 
 Held stimm icon
 
-### Icon (Small)
-`stimms.icon_small` · material · **string | nil**
-
-Held stimm icon; small variant
-
 ## Status
 
 ### Active %% Remaining

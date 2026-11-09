@@ -21,12 +21,7 @@ Gray for no-charge (Brain Rupture); red at empty; orange at low; else white
 
 Blitz icon
 
-### Icon (Small)
-`blitz.icon_small` · material · **string | nil**
-
-Small Blitz icon
-
-As on the vanilla team panel
+Variant Simple is the vanilla team panel's icon
 
 ## Charges
 

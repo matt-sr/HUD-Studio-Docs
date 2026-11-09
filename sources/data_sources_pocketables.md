@@ -17,11 +17,6 @@ Is anything carried in the slot?
 
 Carried item icon
 
-### Icon (Small)
-`pocketables.icon_small` · material · **string | nil**
-
-Carried item icon (small)
-
 ### In Hand?
 `pocketables.is_equipped` · boolean · **true | false**
 

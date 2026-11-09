@@ -2,7 +2,7 @@ A group collects blocks in the Blocks tree. Its blocks hide and show together, s
 
 A group draws nothing itself. It has no position, size or scale; each block in it keeps its own.
 
-Groups of nodes inside a block are a different thing; see [Blocks Tree](blocks_tree.md).
+Groups of nodes inside a block are a different thing; see [Blocks Tree](../ui/blocks_tree.md).
 
 ## Making a group
 
@@ -21,7 +21,7 @@ The group's blocks sit together in the tree, under its row. The tree's order is 
 - Drag the group's row to move the whole group, blocks and all.
 - Drag a block within the group to restack it among the others.
 
-Note that groups always draw on top of ungrouped blocks, and a group row cannot be dragged below ungrouped blocks in the [Blocks Tree](blocks_tree.md).
+Note that groups always draw on top of ungrouped blocks, and a group row cannot be dragged below ungrouped blocks in the [Blocks Tree](../ui/blocks_tree.md).
 
 ## Showing and hiding
 

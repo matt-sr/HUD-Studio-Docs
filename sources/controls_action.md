@@ -31,13 +31,13 @@ Each game action reads the same fields, through whatever key the player has boun
 
 ## Fields
 
-| Field               | Leaf            | Type    | Meaning                                         |
-| ------------------- | --------------- | ------- | ----------------------------------------------- |
-| `Held?`             | `held`          | boolean | down right now. Holdable actions only           |
-| `Held For (s)`      | `held_seconds`  | number  | seconds held; 0 while up. Holdable actions only |
+| Field               | Leaf            | Type    | Meaning                                            |
+| ------------------- | --------------- | ------- | -------------------------------------------------- |
+| `Held?`             | `held`          | boolean | down right now. Holdable actions only              |
+| `Held For (s)`      | `held_seconds`  | number  | seconds held; 0 while up. Holdable actions only    |
 | `Since Pressed (s)` | `since_pressed` | number  | seconds since the last press; `math.huge` if never |
-| `Presses`           | `presses`       | integer | presses since load                              |
-| `Keybind`           | `keybind`       | string  | the bound key as display text                   |
+| `Presses`           | `presses`       | integer | presses since load                                 |
+| `Keybind`           | `keybind`       | string  | the bound key as display text                      |
 
 ```lua
 -- Text field: the player's ability key
