@@ -10,16 +10,16 @@ A variable is a _named value_ that belongs to a block. You set it once, and any 
 
 - Changing one colour rethemes the whole block
 - A condition several nodes need is written once instead of on each node
-- `Fixed` and `Cases` variables need no code
-- A variable is worked out once per update, however many fields read it. A field reading a `Fixed` variable costs the same as a field with the value typed in
+- `Static` and `Cases` variables need no code
+- A variable is worked out once per update, however many fields read it. A field reading a `Static` variable costs the same as a field with the value typed in
 
 ## The three modes
 
-| Mode    | Its value is                                                            | Use it for                              |
-| ------- | ----------------------------------------------------------------------- | --------------------------------------- |
-| `Fixed` | what you type                                                           | a shared colour, size, text or material |
-| `Cases` | the value of the first case whose conditions are true, else the default | a colour or text that follows a state   |
-| `Code`  | what a short script assigns to `value`                                  | anything the other two cannot express   |
+| Mode     | Its value is                                                            | Use it for                              |
+| -------- | ----------------------------------------------------------------------- | --------------------------------------- |
+| `Static` | what you type                                                           | a shared colour, size, text or material |
+| `Cases`  | the value of the first case whose conditions are true, else the default | a colour or text that follows a state   |
+| `Code`   | what a short script assigns to `value`                                  | anything the other two cannot express   |
 
 A variable is always assigned a data type - `Number`, `Text`, `Boolean`, `Colour` or `Material`. The types define which fields can read them
 

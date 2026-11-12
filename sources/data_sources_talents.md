@@ -70,9 +70,12 @@ Each update, it shows the first of these that applies:
 | the effect is up with time left                            | that time draining, 100 down to 0       |
 | stacks are up on a timer                                   | the stack timer draining, 100 down to 0 |
 | a timed stack has run out but not yet been removed         | 0                                       |
+| build-up stacks are up (see below)                         | stacks as % of the cap, 0 up to 100     |
 | a proc or refill is ready                                  | 100                                     |
 | known idle: not active and no stacks                       | 0                                       |
 | anything else (a passive, an untimed effect, plain stacks) | 100                                     |
+
+**Build-up stacks** are untimed stacks that give nothing until a keystone spends them on a separate effect: Inexorable Judgement (Momentum), Blazing Piety (Fury), Weapons Specialist, Terminus Warrant, Power Overload. While they build, Adaptive shows how close you are to the cap (5 of 20 Momentum reads 25%); once spent, the effect's time left takes over. A `buffs` entry whose Buff ID is one of these keystones' build-up buffs follows the same logic.
 
 **Why use it?** Every keystone works differently: some run on stacks, some on a timed effect, some on a cooldown, and several switch between them (e.g. Until Death). Adaptive always picks whatever is happening now, in order of (opinionated) priority.
 
@@ -85,6 +88,93 @@ The single-purpose leaves, such as `cooldown_progress_percent` or `stack_progres
 Every keystone and aura `icon` is the buff bar's art for that talent. The talent tree's art is used only when a talent has no buff icon. Weapons Specialist and Terminus Warrant show the wielded weapon's buff icon, as the buff bar does; with no weapon in hand, and on teammates, a fixed one (Weapons Specialist's ranged, Terminus Warrant's melee).
 
 A bound `icon` (keystone or aura) shows three options under the Field picker: **Shape** (default [Vanilla] Buff, the square mask), **Fill Color** (default [Vanilla] Adaptive, the keystone or aura ramp) and **Fill Behaviour** (default Adaptive; a teammate's icon is always full, and so is any keystone or aura icon in the Mourningstar). In code, a plain read such as `player_1.talents.keystone.icon` is the bare icon (hexagon, no ramp, full). For the same look as a binding, use `with_options(player_1.talents.keystone, "icon", {})`, with any choices in the table.
+
+```lua
+local mask_options = {
+    "talent_default_mask",
+    "hexagon",
+    "circle_frame_horde_mask",
+    "ability_mask_battery",
+    "square_frame_mask",
+    "circular_frame_mask",
+    "hex_frame_mask",
+    "gradient_radial_invert",
+    "blur_straight_02",
+    "blur_straight",
+    "gradient_horizontal_tapered",
+    "drop_shadow_center_fade"
+}
+
+local ramp_options = {
+    "adaptive",
+    "talent_ability",
+    "talent_aura",
+    "talent_blitz",
+    "warp_ramp_03",
+    "talent_keystone",
+    "rarity_04",
+    "purple_ramp_01",
+    "warp_ramp_02",
+    "fire_01",
+    "lasgun_ramp_01",
+    "fire_ramp_03",
+    "gradient_digital_blood_red",
+    "rarity_06",
+    "bleedfire_ramp_01",
+    "fire_ramp_01",
+    "lasgun_ramp_02",
+    "fire_ramp_02",
+    "gradient_digital_frame_red",
+    "gradient_farme_selected_red",
+    "gradient_digital_disabled_red",
+    "rarity_05",
+    "fire_04",
+    "fuse_01",
+    "yellow_ramp_01",
+    "gradient_digital_green",
+    "healing_ramp",
+    "green_ramp_02",
+    "enemy_fire_01",
+    "yellow_green_ramp_01",
+    "gradient_farme_selected_green",
+    "rarity_02",
+    "gradient_digital_disabled_green",
+    "fuse_02",
+    "yellow_white_ramp_01",
+    "blue_01",
+    "blue_ramp_01",
+    "thunder_ramp",
+    "blue_ramp_02",
+    "plasma_rifle_ramp_02",
+    "warp_ramp",
+    "warp_ramp_controlled_03",
+    "warp_ramp_controlled_01",
+    "rarity_03",
+    "horde_buff_family_gradient",
+    "freeze_ramp_01",
+    "talent_default",
+    "rarity_01",
+    "white_ramp_01",
+    "green_ramp_01"
+}
+
+local fill_behaviour_options = {
+    "adaptive",
+    "buff_bar",
+    "cooldown",
+    "talent_active",
+    "stack_timer",
+    "stacks",
+    "full",
+    "none"
+}
+
+material = with_options(sources.player_1.talents.keystone, "icon", {
+    mask = mask_options[1],
+    ramp = ramp_options[1],
+    fill_behaviour = fill_behaviour_options[1]
+})
+```
 
 ## Auras
 

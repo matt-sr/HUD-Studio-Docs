@@ -30,6 +30,7 @@
   - [Ability](sources/data_sources_ability.md)
   - [Active Effects](sources/data_sources_active_effects.md)
   - [Blitz](sources/data_sources_blitz.md)
+  - [Buffs](sources/data_sources_buffs.md)
   - [Combo](sources/data_sources_combo.md)
   - [Equipment](sources/data_sources_equipment.md)
   - [Identity](sources/data_sources_identity.md)

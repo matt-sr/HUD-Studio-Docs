@@ -21,7 +21,7 @@ An empty string draws nothing.
 
 ## Size and wrapping
 
-Text wraps onto a new line when it runs past the box's width. The height only bounds where Alignment places it. Drag the yellow corner to resize the box like a rectangle.
+Text wraps onto a new line when it runs past the box's width. The height only bounds where Alignment places it. Drag the corner to resize the box like a rectangle.
 
 _Shrink to Fit_ steps the font down instead of wrapping, so a long name stays on one line. Static text is fitted once; changing text is fitted again on every distinct value.
 
