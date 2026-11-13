@@ -23,7 +23,7 @@ return with_options(player_1.buffs, "stacks", { buff_id = "veteran_snipers_focus
 ### Name
 `buffs.name` · `string` · `string | nil` · **local player only**
 
-A blessing's in-game name, else the Buff ID tidied for display
+A blessing's or talent's in-game name, else the Buff ID tidied for display
 
 ```lua
 with_options(sources.player_1.buffs, "name", {
