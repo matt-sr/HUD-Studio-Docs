@@ -260,6 +260,17 @@ with_options(sources.player_1.buffs, "zero_stacks_seconds", {
 })
 ```
 
+### Time To 0 Stacks [%]
+`buffs.zero_stacks_percent` · `number` · `0 .. 100` · **local player only**
+
+Time left until every stack has dropped, 100 (full cap) to 0
+
+```lua
+with_options(sources.player_1.buffs, "zero_stacks_percent", {
+    buff_id = ""
+})
+```
+
 ## Cooldown
 
 ### On Cooldown?

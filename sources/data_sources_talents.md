@@ -38,6 +38,7 @@ Leaves that do not apply to a talent read 0 or false.
 | `stack_seconds`             | number   | until the next stack drops, or all of them on a shared timer |
 | `stack_progress_percent`    | percent  | same, 100 to 0                                               |
 | `zero_stacks_seconds`       | number   | until every stack has dropped                                |
+| `zero_stacks_percent`       | percent  | same, 100 (a full cap's drain) to 0                          |
 | `is_on_cooldown`            | boolean  | a proc or refill is cooling down                             |
 | `cooldown_seconds`          | number   | until ready, or until the next charge                        |
 | `cooldown_progress_percent` | percent  | 0 to 100; stays at 100 while ready                           |
