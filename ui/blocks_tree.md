@@ -53,6 +53,17 @@ Double-click a row to rename it.
 
 **! Note !** _Renaming a row will change its ID_. If any code references a node or block by ID, _that reference will break_.
 
+## Tags
+
+Tags help you find rows in a long tree. You can put them on groups, blocks and nodes. Right-click a row and use **Tags**:
+
+- **Color Tag** adds a coloured stripe down the row's left edge
+- **Glyph Tag** puts an icon before the row's name
+
+If the menu opens on a selection of multiple rows, the tag goes on all of them.
+
+Tags only show in the editor. Exports leave them out, so other people never see yours.
+
 ## Showing and hiding
 
 The eye on a block or node row is its visibility in the editor and in game.
